@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Unsplash, { toJson } from 'unsplash-js';
 
 const unsplash = new Unsplash({
-  accessKey: 'Cg4mFo-mHl-d8ZADrrdXMq-lCXgi0SejiuZWZ4hQgYM',
+  accessKey: process.env.REACT_APP_API_KEY,
 });
 
 export default function SearchPhotos() {
@@ -56,6 +56,3 @@ export default function SearchPhotos() {
     </>
   );
 }
-
-// Access Key:"Cg4mFo-mHl-d8ZADrrdXMq-lCXgi0SejiuZWZ4hQgYM"
-// Secret key:"Kf11chVq-6FXU6I8eiFhIZ7DhOvFkcG4yjO7hzmZup4"
